@@ -10,3 +10,5 @@ O primeiro recebe uma palavra por parâmetro que se chama word, e informa se a p
 https://example-restapi.herokuapp.com/palindrome?word=[umapalavraqualquer]
 
 O segundo recebe um texto por parâmetro que se chama text, e informa o primeira caractere que não se repete juntamente com o tempo que levou para processar em milisegundos.
+
+https://example-restapi.herokuapp.com/firstChar?text=[umtextoqualquer]
