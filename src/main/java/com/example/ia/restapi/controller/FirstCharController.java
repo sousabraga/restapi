@@ -3,7 +3,7 @@ package com.example.ia.restapi.controller;
 import java.sql.Timestamp;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +16,7 @@ public class FirstCharController {
 	@Autowired
 	private FirstCharService firstCharService;
 
-	@GetMapping("/firstChar") 
+	@RequestMapping("/firstChar") 
 	public FirstChar firstChar(@RequestParam(value="text", defaultValue="") String text) {
 		long start = System.currentTimeMillis();
 		
